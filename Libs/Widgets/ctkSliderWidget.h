@@ -243,19 +243,19 @@ public:
   /// Return the popup if ctkSliderWidget hasPopupSlider() is true, 0 otherwise.
   /// It can be useful to control where the popup shows up relative to the
   /// spinbox the popup \sa ctkPopupWidget::baseWidget.
-  virtual ctkPopupWidget* popup()const;
+  Q_INVOKABLE virtual ctkPopupWidget* popup()const;
 
   ///
   /// Returns the spinbox synchronized with the slider. Be careful
   /// with what you do with the spinbox as the slider might change
   /// properties automatically.
-  virtual ctkDoubleSpinBox* spinBox();
+  Q_INVOKABLE virtual ctkDoubleSpinBox* spinBox();
 
   ///
   /// Returns the slider synchronized with the spinbox. Be careful
   /// with what you do with the slider as the spinbox might change
   /// properties automatically.
-  virtual ctkDoubleSlider* slider();
+  Q_INVOKABLE virtual ctkDoubleSlider* slider();
 
   ///
   /// Set/Get a value proxy filter.
