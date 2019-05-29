@@ -136,7 +136,7 @@ public:
   void resetCamera();
 
   /// Get a reference to the associated vtkRenderer
-  vtkRenderer* renderer()const;
+  Q_INVOKABLE vtkRenderer* renderer()const;
 
   /// Set window interactor
   /// Reimplemented to propagate interaction to Orientation widget
