@@ -590,6 +590,16 @@ bool ctkDoubleSlider::eventFilter(QObject* watched, QEvent* event)
           return true;
           }
         }
+      case QEvent::KeyPress:
+        {
+        QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
+        if (keyEvent->key() & Qt::Key_Enter || keyEvent->key() & Qt::Key_Return)
+          {
+          emit returnPressed();
+          event->accept();
+          return true;
+          }
+        }
       default:
         break;
       }
