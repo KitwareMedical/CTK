@@ -257,6 +257,9 @@ Q_SIGNALS:
   /// \sa QAbstractSlider::rangeChanged()
   void rangeChanged(double min, double max);
 
+  /// This signal is emitted when the Return or Enter key is pressed.
+  void returnPressed();
+
 protected Q_SLOTS:
   void onValueChanged(int value);
   void onSliderMoved(int position);
