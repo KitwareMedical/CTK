@@ -246,7 +246,7 @@ public:
 
   /// Get a pointer on the line edit of the spinbox.
   /// \sa QLineEdit, spinBox()
-  QLineEdit* lineEdit()const;
+  Q_INVOKABLE QLineEdit* lineEdit()const;
 
   /// Set the spinbox mode when using a set*() method.
   //// \sa round(), setValue(), setValueIfDifferent(), setValueAlways()
